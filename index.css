@@ -1,0 +1,217 @@
+:root{
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    /* Color Constants */
+    --sky: #BBE1FA;
+    --mediumblue: #3282B8;
+    --mydarkblue: #0F4C75;
+    --dark: #1B262C;
+}
+
+body{
+    margin: 0;
+}
+
+/* Header */
+header{
+    background-image: url("icons/ucla-campus-night.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 35% center;
+    background-attachment: fixed;
+    position: relative;
+}
+header article{
+    position:absolute;
+    right: 5rem;
+    bottom: 6rem;
+    color: white;
+    font-size: 3rem;
+}
+
+/* All Main Sections*/
+.main-section{
+    padding: 2rem 5rem;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: cover 0% contain 80%;     
+    /* Starts as soon as the main section begins to enter scroll view*/
+    /* Ends once 80% of the main section is contained into view */
+}
+
+.main-section:nth-child(even){
+    background-color: whitesmoke;
+}
+
+/* Profile */
+#profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+}
+
+#abby-picture{
+    border-radius: 5rem;
+    height: 70vh;
+}
+
+/* Education */
+.timeline{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.timeline article{
+    background: var(--sky);
+}
+
+.timeline ul::before{     /* Vertical Line in timeline*/
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    height: 100%;
+    width: 1px;
+    background: var(--sky);
+}
+
+.timeline li article{
+    margin-left: 1rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.timeline li article::before{    /* Horizontal Line in timeline*/
+    content: '';
+    position: absolute;
+    top: 1.15rem;
+    left: -0.5rem;
+    width: 1.5rem;
+    height: 0.1rem;
+    background: var(--sky);
+}
+
+.timeline li article > *{     /*All article elements have a margin of 0 (expect the first timeline-info as seen below*/
+    margin: 0rem;
+}
+.timeline-important+.timeline-info{
+    margin: 1rem 0 0 0;
+}
+
+.timeline li{
+    position: relative;
+}
+
+.timeline li + li{
+    margin-top: 1rem;
+}
+
+.timeline li::marker{
+    content:"⬤";
+    color: var(--sky);
+}
+
+/* Projects */
+#projects-flex-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.project{
+    background-color: var(--mydarkblue);
+    width: 25vw;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem;
+    cursor: pointer;
+}
+
+.project:hover{
+    opacity: 0.8;
+}
+
+.project div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project h3{
+    margin: 0 0.25rem 0 0;
+}
+
+.project img{
+    margin: 0 0.25rem;
+    width: 1rem;
+}
+
+.project p{
+    margin: 1rem 0 0 0;
+}
+
+/* Footer */
+footer{
+    padding: 1rem 0rem;
+    width: 100%;
+    background-color: slategray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socials::before, .socials::after{
+    content:"";
+    position: relative;
+    top: 1.5rem;
+    width: 40vw;
+    height: .1rem;
+    background-color: white;
+}
+
+.social > img{
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    transition: transform ease-in-out 100ms;
+}
+
+.social > img:hover{
+    transform: scale(1.1);
+}
+
+#copyright > p{
+    margin: 0.5rem;
+}
+
+#leah{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Fade-in */
+@keyframes fade-in{
+    to{opacity: 1;}
+}
