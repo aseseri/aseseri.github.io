@@ -16,17 +16,24 @@ body{
 }
 
 /* Header */
-header{
-    background-image: url("icons/ucla-campus-night.jpg");
+header:before{
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100vh;
+    z-index: -10;
+    background: url("icons/ucla-campus-night.jpg") no-repeat 35% 50%;
     -webkit-background-size: cover; /* Safari and Chrome */
     -moz-background-size: cover;    /* Firefox */
     -o-background-size: cover;      /* Opera */
     background-size: cover;         /* Standard */
-    background-repeat: no-repeat;
-    background-position: 35% 50%;
-    background-attachment: fixed;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
     position: relative;
 }
 header article{
@@ -40,12 +47,19 @@ header article{
 /* All Main Sections*/
 .main-section{
     padding: 2rem 5rem;
+}
+
+.fade-in{
     opacity: 0;
     animation: fade-in linear forwards;
     animation-timeline: view();
     animation-range: cover 0% contain 80%;     
     /* Starts as soon as the main section begins to enter scroll view*/
     /* Ends once 80% of the main section is contained into view */
+}
+
+.main-section:nth-child(odd){
+    background-color: white;
 }
 
 .main-section:nth-child(even){
@@ -228,10 +242,6 @@ footer{
 }
 
 @media (max-width: 1000px){
-    header{
-        background-image: url("icons/ucla-campus-night-1000px.jpg");
-        background-position: 20% 80%;
-    }
     .main-section{
         padding: 2rem 2.5rem;
     }
@@ -258,10 +268,6 @@ footer{
 }
 
 @media (max-width: 500px){
-    header{
-        background-image: url("icons/ucla-campus-night-700px.jpg");
-        background-position: 20% 80%;
-    }
     #abby-picture{
         border-radius: 3rem;
         height: 40vh;
