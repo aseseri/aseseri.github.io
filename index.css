@@ -20,7 +20,10 @@ header{
     background-image: url("icons/ucla-campus-night.jpg");
     width: 100%;
     height: 100vh;
-    background-size: cover;
+    -webkit-background-size: cover; /* Safari and Chrome */
+    -moz-background-size: cover;    /* Firefox */
+    -o-background-size: cover;      /* Opera */
+    background-size: cover;         /* Standard */
     background-repeat: no-repeat;
     background-position: 35% 50%;
     background-attachment: fixed;
