@@ -91,6 +91,7 @@ header article{
 
 .timeline article{
     background: var(--sky);
+    overflow-wrap: anywhere;
 }
 
 .timeline ul::before{     /* Vertical Line in timeline*/
@@ -204,7 +205,7 @@ footer{
     content:"";
     position: relative;
     top: 1.5rem;
-    width: 40vw;
+    width: calc((99vw - 9rem - 2rem)/2);
     height: .1rem;
     background-color: white;
 }
