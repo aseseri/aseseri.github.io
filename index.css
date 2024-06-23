@@ -57,6 +57,7 @@ header article{
     align-items: center;
     height: 100vh;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 #abby-picture{
@@ -131,6 +132,7 @@ header article{
 }
 
 .project{
+    margin: 0.5rem;
     background-color: var(--mydarkblue);
     width: 25vw;
     color: white;
@@ -214,4 +216,50 @@ footer{
 /* Fade-in */
 @keyframes fade-in{
     to{opacity: 1;}
+}
+
+@media (max-width: 1120px){
+    .main-section{
+        padding: 2rem 4rem;
+    }
+}
+
+@media (max-width: 1000px){
+    .main-section{
+        padding: 2rem 2.5rem;
+    }
+    header article{
+        font-size: 2.5rem;
+    }
+    #abby-picture{
+        border-radius: 4;
+        height: 55vh; 
+    }
+}
+
+@media (max-width: 800px){
+    .main-section{
+        padding: 2rem 2rem;
+    }
+    header article{
+        right: 2rem;
+        font-size: 2rem;
+    }
+    .project{
+        width: 70vw;
+    }
+}
+
+@media (max-width: 500px){
+    #abby-picture{
+        border-radius: 3rem;
+        height: 40vh;
+    }
+    header article{
+        right: 1rem;
+        font-size: 1.5rem;
+    }
+    .project{
+        width: 60vw;
+    }
 }
