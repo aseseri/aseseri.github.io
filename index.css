@@ -228,6 +228,10 @@ footer{
 }
 
 @media (max-width: 1000px){
+    header{
+        background-image: url("icons/ucla-campus-night-1000px.jpg");
+        background-position: 20% 80%;
+    }
     .main-section{
         padding: 2rem 2.5rem;
     }
