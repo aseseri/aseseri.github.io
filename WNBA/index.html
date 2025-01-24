@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WNBA Data Analysis</title>
+        <link rel="icon" type="image/x-icon" href="../icons/WNBA-Symbol.ico">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script type="module" src="players/script.js"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+                <a href="">WNBA Data Dashboard</a>
+                <a href="players/players.html">Players</a>
+                <a href="eras/eras.html">Eras</a>
+        </nav>
+        
+        <h3>Website still in progress. Feel free to checkout the players and eras tabs.</h3>
+
+        <div class="container mt-4">
+            <!-- Player Stats Card -->
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header">Example Player Statistics</div>
+                    <div class="card-body">
+                        <canvas id="playerBarChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Predictions Card -->
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">Example Predicted Points (2025)</div>
+                    <div class="card-body">
+                        <canvas id="predictionChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Stats Card -->
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header">Example Team Performance</div>
+                    <div class="card-body">
+                        <canvas id="teamPieChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 WNBA Data Dashboard | Designed with Passion</p>
+        </footer>
+
+        <script>
+            // Sample Data for Bar Chart (Player Stats)
+            const playerBarChart = document.getElementById('playerBarChart');
+            new Chart(playerBarChart, {
+                type: 'bar',
+                data: {
+                    labels: ['Player A', 'Player B', 'Player C', 'Player D'],
+                    datasets: [
+                        {
+                            label: 'Points (2024)',
+                            data: [15, 18, 20, 12],
+                            backgroundColor: 'rgba(92, 45, 145, 0.7)',
+                        },
+                        {
+                            label: 'Assists (2024)',
+                            data: [6, 8, 7, 4],
+                            backgroundColor: 'rgba(255, 165, 0, 0.7)',
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        title: {
+                            display: true,
+                            text: 'Player Performance in 2024'
+                        }
+                    }
+                }
+            });
+
+            // Sample Data for Pie Chart (Team Stats)
+            const teamPieChart = document.getElementById('teamPieChart');
+            new Chart(teamPieChart, {
+                type: 'pie',
+                data: {
+                    labels: ['Team A', 'Team B', 'Team C', 'Team D'],
+                    datasets: [
+                        {
+                            data: [25, 30, 20, 25],
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.7)',
+                                'rgba(54, 162, 235, 0.7)',
+                                'rgba(255, 206, 86, 0.7)',
+                                'rgba(75, 192, 192, 0.7)'
+                            ]
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        title: {
+                            display: true,
+                            text: 'Team Contribution to Wins'
+                        }
+                    }
+                }
+            });
+
+            // Sample Data for Line Chart (Predicted Points)
+            const predictionChart = document.getElementById('predictionChart');
+            new Chart(predictionChart, {
+                type: 'line',
+                data: {
+                    labels: ['Player A', 'Player B', 'Player C', 'Player D'],
+                    datasets: [
+                        {
+                            label: 'Predicted Points (2025)',
+                            data: [18, 22, 25, 15],
+                            borderColor: 'rgba(92, 45, 145, 0.7)',
+                            backgroundColor: 'rgba(92, 45, 145, 0.2)',
+                            fill: true,
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        title: {
+                            display: true,
+                            text: 'Predicted Points for 2025 Season'
+                        }
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

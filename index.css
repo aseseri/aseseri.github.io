@@ -141,11 +141,17 @@ header article{
 }
 
 /* Projects */
+#projects-outer-flex-box{
+    display: flex;
+    justify-content: center;
+}
+
 #projects-flex-box{
+    width: calc(3*25vw + 3*1rem + 3*1.5rem);   /*Adjusted to fit 3 project boxes (margin and padding too)*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: stretch;
 }
 
@@ -236,7 +242,7 @@ footer{
     to{opacity: 1;}
 }
 
-@media (max-width: 1120px){
+@media (max-width: 1125px){
     .main-section{
         padding: 2rem 4rem;
     }
@@ -255,7 +261,7 @@ footer{
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 805px){
     .main-section{
         padding: 2rem 2rem;
     }
@@ -265,6 +271,9 @@ footer{
     }
     .project{
         width: 70vw;
+    }
+    #projects-flex-box{
+        width: calc(70vw + 1rem + 1.5rem);
     }
 }
 
@@ -279,5 +288,8 @@ footer{
     }
     .project{
         width: 60vw;
+    }
+    #projects-flex-box{
+        width: calc(60vw + 1rem + 1.5rem);
     }
 }
