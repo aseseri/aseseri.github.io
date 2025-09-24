@@ -15,7 +15,8 @@
     <body>
         <header>
             <article>
-                <h1>Hi, I am Abby Seseri</h1>
+                <h1>Abby Seseri</h1>
+                <p>M.S. in Computer Science at UCLA | Machine Learning & Data</p>
             </article>
         </header>
 
@@ -23,7 +24,11 @@
             <!--Profile-->
             <section class="main-section" id="profile"><div class="fade-in">
                 <img id="abby-picture" src="icons/Profile.png" alt="A picture of Abby">
-                <p>I am a student at UCLA, majoring in Computer Science.</p>
+                <p>
+                    I'm currently getting my M.S. in Computer Science at UCLA, where I also did my undergrad. My academic work is 
+                    focused on machine learning and deep learning, but I'm also interested in sports analytics. 
+                    Outside of tech, I spend my time hiking, going to the beach, or planning my next project.
+                </p>
             </div></section>
 
             <!--Education-->
@@ -33,21 +38,19 @@
                     <ul>
                     <li><article class="school">
                         <h3>University of California, Los Angeles</h3>
+                        <p class="timeline-important"><em>Master of Science</em> | 2025-2026 (Expected)</p>
+                        <p class="timeline-info"><strong>Major: </strong>Computer Science</p>
+                        <p class="timeline-info"><strong>Relevant Courses: </strong>Big Data Analytics, Neural Signal Processing, 
+                            Advanced Software Engineering</p>
+                    </article></li>
+                    <li><article class="school">
+                        <h3>University of California, Los Angeles</h3>
                         <p class="timeline-important"><em>Bachelor's Degree</em> | 2022-2025</p>
                         <p class="timeline-info"><strong>Major: </strong>Computer Science</p>
-                        <p class="timeline-info"><strong>Relevant Courses: </strong>CS 181: Theory of Computing,
-                            CS 180: Introduction to Algorithms and Complexity, CS 161: Fundamentals of Artificial Intelligence, 
-                            CS M151B: Computer Systems Architecture, 
-                            CS M148: Data Science, CS M146: Machine Learning, CS 145: Data Mining, CS 144: Web Applications, 
-                            CS 143: Data Management Systems, CS 131: Programming Languages, 
-                            CS 118: Computer Network Fundamentals, CS 111: Operating Systems Principles, 
-                            CS 35L: Software Construction, CS 33: Computer Organization, 
-                            CS 32: Data Structures and Algorithms, 
-                            MATH 142: Mathematical Modeling, MATH 115A and 33A: Linear Algebra, 
-                            MATH 33B: Differential Equations, MATH 32A/B: Multivariable Calculus, 
-                            STATS 100A: Introduction to Probability,
-                            EC ENGR C147: Neural Networks and Deep Learning, 
-                            EC ENGR 133A: Applied Numerical Computing, EC ENGR M16: Logic Design of Digital Systems</p>
+                        <p class="timeline-info"><strong>Awards: </strong>Dean's Honors List (Winter 2023, Spring 2023)</p>
+                        <p class="timeline-info"><strong>Relevant Courses: </strong>Machine Learning, Advanced Neural Networks & Deep Learning, 
+                            Data Science, Artificial Intelligence, Data Mining, Data Management Systems, Operating Systems, 
+                            Algorithms & Complexity, Web Applications, Computer Networks, Software Engineering</p>
                     </article></li>
                     <li><article class="school">
                         <h3>Santiago Canyon College</h3>
@@ -68,20 +71,37 @@
                 <div class="timeline">
                     <ul>
                     <li><article class="job">
-                        <h3>Data Annotation</h3>
-                        <p class="timeline-important">AI Data Specialist | 2024-Present</p>
+                        <h3>Teaching Assistant (COM SCI M152A)</h3>
+                        <p class="timeline-important">UCLA Computer Science Department | Fall 2025</p>
                         <p class="timeline-info">
-                            Use reinforcement learning from human feedback (RLHF) to enhance the efficiency of 
-                            machine learning models' learning process. Guarantee that models comply with legal 
-                            and ethical responsibilities, such as ensuring they are harmless, truthful, and safe. 
-                            Initiate engineering procedures with diverse parameters and generate evaluations of outcomes. 
-                            Perform quality assurance on the work of other analysts, including prompts, feedback, discussions, 
-                            and ensuring adherence to instructions.
+                            Leading weekly lab sections for the Digital Design Laboratory course. Mentoring teams of students on digital logic concepts and hardware description with Verilog. Grading lab assignments and providing constructive feedback to help students master the material.
                         </p>
                     </article></li>
                     <li><article class="job">
+                        <h3>AI Data Specialist (Contractor)</h3>
+                        <p class="timeline-important">Data Annotation | Summer 2024</p>
+                        <p class="timeline-info">
+                            Enhanced large language models (LLMs) using Reinforcement Learning from Human Feedback (RLHF).
+                            Evaluated model outputs for safety, accuracy, and adherence to complex guidelines, and performed quality 
+                            assurance on the work of other analysts.
+                        </p>
+                    </article></li>
+                    </ul>
+                </div>
+            </div></section>
+
+            <!--Activities-->
+            <section class="main-section" id="activities"><div class="fade-in">
+                <h2>Leadership & Activities</h2>
+                <div class="timeline">
+                    <ul>
+                    <li><article class="job">
                         <h3><a href="https://upe.seas.ucla.edu/">Upsilon Pi Epsilon</a>, UCLA</h3>
-                        <p class="timeline-important">International Honor Society Member | 2023-Present</p>
+                        <p class="timeline-important">Member & Tutor | 2023-2025</p>
+                        <p class="timeline-info">
+                            Inducted into the international honor society for computing, open to the top third of CS students. 
+                            Provide tutoring and mentorship to peers in foundational computer science courses.
+                        </p>
                     </article></li>
                     </ul>
                 </div>
@@ -91,6 +111,23 @@
             <section class="main-section" id="projects"><div class="fade-in">
                 <h2>Projects</h2>
                 <section id="projects-outer-flex-box"><section id="projects-flex-box">
+                    <article class="project" id="wnba-web-app">
+                        <div>
+                            <h3>WNBA Analytics Web Application</h3>
+                            <img class="language" src="icons/python.svg" alt="Python">
+                            <img class="language" src="icons/react.svg" alt="React">
+                            <img class="language" src="icons/docker.webp" alt="Docker">
+                            <img class="language" src="icons/postgresql.svg" alt="PostgreSQL">
+                        </div>
+                        <p>Built a full-stack WNBA analytics platform featuring a custom Scikit-learn model to find statistically similar players. The entire application is containerized with Docker and includes a CI/CD pipeline with GitHub Actions for automated testing.</p>
+                    </article>
+                    <article class="project" id="emg2qwerty">
+                        <div>
+                            <h3>EMG Keystroke Prediction (emg2qwerty)</h3>
+                            <img class="language" src="icons/python.svg" alt="Python">
+                        </div>
+                        <p>Developed an LSTM-based deep learning model to predict keyboard strokes from sEMG muscle signals. Experimented with various RNN architectures and preprocessing techniques to improve Character Error Rate (CER) by 7%.</p>
+                    </article>
                     <article class="project" id="personal-website">
                         <div>
                             <h3>Personal Website</h3>
@@ -100,28 +137,9 @@
                         </div>
                         <p>Developed a personal website that is hosted on github pages using html, css, and javascript.</p>
                     </article>
-                    <article class="project" id="peach-party">
-                        <div>
-                            <h3>Peach Party Project</h3>
-                            <img class="language" src="icons/cpp.svg" alt="C plus plus">
-                        </div>
-                        <p>Constructed a 2-player game where characters and 2 enemy types move along a 16x16 grid following different algorithms and
-                            possess states depending on 6 square types on the grid, competing for the most coins in 1 minute
-                        </p>
-                    </article>
-                    <article class="project" id="interpreter">
-                        <div>
-                            <h3>Making an Interpreter</h3>
-                            <img class="language" src="icons/python.svg" alt="Python">
-                        </div>
-                        <p>Created an interpreter for a language called Brewin supporting typical arithmetic and comparison operators, 
-                            dynamically-scoped variables, first-class functions, lambdas, pass-by-reference and pass-by-value, limited type coercions, 
-                            objects and all operations on objects, and prototypal inheritance using an abstract syntax tree
-                        </p>
-                    </article>
                     <article class="project" id="networking">
                         <div>
-                            <h3>Reliable and Secure Network Communication System</h3>
+                            <h3>Reliable, Secure Network Communication System</h3>
                             <img class="language" src="icons/c.svg" alt="C">
                         </div>
                         <p>Developed a reliable, encrypted bidirectional data transfer protocol over UDP.
@@ -129,14 +147,23 @@
                             Ensured data integrity and confidentiality using TLS-like handshakes and cryptographic standards.
                         </p>
                     </article>
-                    <article class="project" id="wnba">
+                    <article class="project" id="interpreter">
                         <div>
-                            <h3>WNBA Dataset</h3>
+                            <h3>Brewin Language Interpreter</h3>
                             <img class="language" src="icons/python.svg" alt="Python">
                         </div>
-                        <p>Analyzed a WNBA dataset throughout the data science life cycle. Neural networks and K-means classification
-                            are among some of the models I have used to understand and predict sports trends.
-                            Data provided by basketball-reference.com.
+                        <p>Created an interpreter for a language called Brewin supporting typical arithmetic and comparison operators, 
+                            dynamically-scoped variables, first-class functions, lambdas, pass-by-reference and pass-by-value, limited type coercions, 
+                            objects and all operations on objects, and prototypal inheritance using an abstract syntax tree
+                        </p>
+                    </article>
+                    <article class="project" id="peach-party">
+                        <div>
+                            <h3>Peach Party Game</h3>
+                            <img class="language" src="icons/cpp.svg" alt="C plus plus">
+                        </div>
+                        <p>Constructed a 2-player game where characters and 2 enemy types move along a 16x16 grid following different algorithms and
+                            possess states depending on 6 square types on the grid, competing for the most coins in 1 minute
                         </p>
                     </article>
                 </section></section>
@@ -150,7 +177,7 @@
                 <a class="social" href="mailto:aseseri555@gmail.com"><img src="icons/gmail.svg" alt="Gmail Logo"></a>
             </section>
             <section id="copyright">
-                <p>Copyright © 2024 Abby Seseri</p>
+                <p>Copyright © 2025 Abby Seseri</p>
             </section>
             <section id="leah">
                 <p>Feel free to look at my twin, Leah!</p>
