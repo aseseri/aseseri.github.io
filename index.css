@@ -58,9 +58,9 @@ header p{
     opacity: 0;
     animation: fade-in linear forwards;
     animation-timeline: view();
-    animation-range: cover 0% contain 80%;     
-    /* Starts as soon as the main section begins to enter scroll view*/
-    /* Ends once 80% of the main section is contained into view */
+    animation-range: entry 0% entry 80%;
+    /* Start when top hits bottom of screen. 
+       Finish when the element has entered 25% of the way. */
 }
 
 .main-section:nth-child(odd){

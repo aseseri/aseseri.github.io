@@ -19,6 +19,15 @@ document.querySelectorAll(".project").forEach((el)=>{el.addEventListener("click"
             case "wnba-web-app":
                 link = "https://github.com/aseseri/wnba-analytics";
                 break;
+            case "decoding-neural-signals":
+                link = "https://github.com/aseseri/Predicting-Text-from-Intracranial-Neural-Signals";
+                break;
+            case "agent-society":
+                link = "https://github.com/aseseri/agent-society-user-simulation";
+                break;
+            case "web-server":
+                link = "https://github.com/aseseri/web_server";
+                break;
         }
         window.open(link, "_blank"); //opens in new window
     });

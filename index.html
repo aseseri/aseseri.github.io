@@ -113,6 +113,13 @@
             <section class="main-section" id="projects"><div class="fade-in">
                 <h2>Projects</h2>
                 <section id="projects-outer-flex-box"><section id="projects-flex-box">
+                    <article class="project" id="decoding-neural-signals">
+                        <div>
+                            <h3>Predicting Text from Intracranial Neural Signals</h3>
+                            <img class="language" src="icons/python.svg" alt="Python">
+                        </div>
+                        <p>Optimized a GRU-based Brain-Computer Interface (BCI) decoder to predict text from neural signals using PyTorch. Implemented advanced regularization techniques, AdamW optimization, and time-masking augmentation to reduce overfitting. Achieved a Phoneme Error Rate (PER) of 18.37%, representing a 16.4% improvement over the baseline model.</p>
+                    </article>
                     <article class="project" id="wnba-web-app">
                         <div>
                             <h3>WNBA Analytics Web Application</h3>
@@ -123,21 +130,19 @@
                         </div>
                         <p>Built a full-stack WNBA analytics platform featuring a custom Scikit-learn model to find statistically similar players. The entire application is containerized with Docker and includes a CI/CD pipeline with GitHub Actions for automated testing.</p>
                     </article>
+                    <article class="project" id="agent-society">
+                        <div>
+                            <h3>AgentSociety: User Behavior Simulation Agent</h3>
+                            <img class="language" src="icons/python.svg" alt="Python">
+                        </div>
+                        <p>Developed an LLM-based agent to simulate realistic user behavior using Chain-of-Thought reasoning and Iterative RAG. Implemented a modular architecture with smart context selection and user persona extraction to strictly enforce writing styles. Achieved a 5.06% improvement in review generation quality compared to the competition baseline.</p>
+                    </article>
                     <article class="project" id="emg2qwerty">
                         <div>
                             <h3>EMG Keystroke Prediction (emg2qwerty)</h3>
                             <img class="language" src="icons/python.svg" alt="Python">
                         </div>
                         <p>Developed an LSTM-based deep learning model to predict keyboard strokes from sEMG muscle signals. Experimented with various RNN architectures and preprocessing techniques to improve Character Error Rate (CER) by 7%.</p>
-                    </article>
-                    <article class="project" id="personal-website">
-                        <div>
-                            <h3>Personal Website</h3>
-                            <img class="language" src="icons/html.svg" alt="HTML">
-                            <img class="language" src="icons/css.svg" alt="CSS">
-                            <img class="language" src="icons/js.svg" alt="Javascript">
-                        </div>
-                        <p>Developed a personal website that is hosted on github pages using html, css, and javascript.</p>
                     </article>
                     <article class="project" id="networking">
                         <div>
@@ -149,6 +154,24 @@
                             Ensured data integrity and confidentiality using TLS-like handshakes and cryptographic standards.
                         </p>
                     </article>
+                    <article class="project" id="web-server">
+                        <div>
+                            <h3>HTTP Server and CRUD API</h3>
+                            <img class="language" src="icons/cpp.svg" alt="C plus plus">
+                            <img class="language" src="icons/python.svg" alt="Python">
+                            <img class="language" src="icons/docker.webp" alt="Docker">
+                        </div>
+                        <p>Engineered a multi-threaded HTTP 1.1 server in C++ supporting static resource serving and a JSON-based REST API. Designed a modular RequestHandler architecture using Boost.Asio and implemented a production-grade build pipeline with CMake, Docker, and GoogleTest for automated coverage and integration testing.</p>
+                    </article>
+                    <article class="project" id="personal-website">
+                        <div>
+                            <h3>Personal Website</h3>
+                            <img class="language" src="icons/html.svg" alt="HTML">
+                            <img class="language" src="icons/css.svg" alt="CSS">
+                            <img class="language" src="icons/js.svg" alt="Javascript">
+                        </div>
+                        <p>Developed a personal website that is hosted on github pages using html, css, and javascript.</p>
+                    </article>
                     <article class="project" id="interpreter">
                         <div>
                             <h3>Brewin Language Interpreter</h3>
@@ -156,7 +179,7 @@
                         </div>
                         <p>Created an interpreter for a language called Brewin supporting typical arithmetic and comparison operators, 
                             dynamically-scoped variables, first-class functions, lambdas, pass-by-reference and pass-by-value, limited type coercions, 
-                            objects and all operations on objects, and prototypal inheritance using an abstract syntax tree
+                            objects and all operations on objects, and prototypal inheritance using an abstract syntax tree.
                         </p>
                     </article>
                     <article class="project" id="peach-party">
@@ -165,7 +188,7 @@
                             <img class="language" src="icons/cpp.svg" alt="C plus plus">
                         </div>
                         <p>Constructed a 2-player game where characters and 2 enemy types move along a 16x16 grid following different algorithms and
-                            possess states depending on 6 square types on the grid, competing for the most coins in 1 minute
+                            possess states depending on 6 square types on the grid, competing for the most coins in 1 minute.
                         </p>
                     </article>
                 </section></section>
